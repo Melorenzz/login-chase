@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      width: 320px;
+      text-align: center;
+    }
+    .container h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .container form {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      gap: 15px;
+      height: 150px;
+    }
+    .container form input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    .container form input:focus {
+      border-color: #667eea;
+      outline: none;
+      box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+    }
+    .container form button {
+      background: #667eea;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 40px;
+    }
+    .container form button:hover {
+      background: #5563c1;
+    }
+    #loginBtn {
+      transition: 0.3s;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>Login</h2>
+  <form action="">
+    <input id="userName" type="text" placeholder="Username">
+    <input id="userPassword" type="password" placeholder="Password">
+    <button id="loginBtn">Login</button>
+  </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
